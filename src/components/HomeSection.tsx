@@ -1,22 +1,22 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
-import './styles/home.css';
+import styles from './styles/home.module.css';
 
 const HomeSection: React.FC = () => {
   return (
-    <section id="home" className="how-it-works">
+    <section id="home" className={styles['how-it-works']}>
       <Typography variant="h4" gutterBottom>AI-Powered Your Video</Typography>
       <Box>
-        <div className="step">
-          <span className="step-icon">🎥</span>
+        <div className={styles.step}>
+          <span className={styles['step-icon']}>🎥</span>
           <Typography variant="body1"><strong>Describe Your Video</strong> – Enter a prompt, script, or idea.</Typography>
         </div>
-        <div className="step">
-          <span className="step-icon">🎨</span>
+        <div className={styles.step}>
+          <span className={styles['step-icon']}>🎨</span>
           <Typography variant="body1"><strong>Choose a Style</strong> – Select themes, voices, and animations.</Typography>
         </div>
-        <div className="step">
-          <span className="step-icon">💾</span>
+        <div className={styles.step}>
+          <span className={styles['step-icon']}>💾</span>
           <Typography variant="body1"><strong>Generate & Download</strong> – AI processes your request and delivers a professional-quality video.</Typography>
         </div>
       </Box>
