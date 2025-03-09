@@ -9,7 +9,7 @@ import HeroSection from '../components/HeroSection';
 
 const Home: React.FC = () => {
   return (
-    <div style={{ position: 'relative', overflow: 'hidden', width: '100vw' ,marginLeft: '-1%'}}>
+    <div style={{ position: 'relative', overflow: 'hidden', width: '101vw' ,marginLeft: '-1%'}}>
       <NavBar />
       <Container maxWidth="lg" sx={{ mt: 10 }}>
         <HeroSection />
