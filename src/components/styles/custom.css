@@ -6,11 +6,14 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #0d0d0d;
     color: #ffffff;
+    background-image: url('https://source.unsplash.com/1600x900/?space,stars');
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   section {
@@ -19,7 +22,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
-    background: linear-gradient(135deg, #1a1a1a, #333333);
+    background: rgba(0, 0, 0, 0.85);
     animation: fadeIn 1s ease-in-out;
   }
   
@@ -30,12 +33,11 @@ body {
   button {
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    background-color: #1e90ff;
+    background: linear-gradient(135deg, #8a2be2, #4b0082);
     color: #ffffff;
   }
   
   button:hover {
-    background-color: #00bfff;
     transform: scale(1.05);
   }
   
@@ -51,3 +53,39 @@ body {
   .hero-image:hover {
     transform: scale(1.05);
   }
+
+.how-it-works {
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  animation: fadeIn 1s ease-in-out;
+  color: #ffffff;
+}
+
+.how-it-works h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.how-it-works p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.how-it-works .step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.how-it-works .step-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #8a2be2;
+}

@@ -1,17 +1,26 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
+import './styles/home.css';
 
 const HomeSection: React.FC = () => {
   return (
-    <section id="home" style={{ padding: '16px', backgroundColor: '#f0f0f0' }}>
-      <Typography variant="h4" gutterBottom>How It Works</Typography>
-      <Typography variant="h6" gutterBottom>Turn Your Ideas into Videos Instantly</Typography>
+    <section id="home" className="how-it-works">
+      <Typography variant="h4" gutterBottom>AI-Powered Your Video</Typography>
       <Box>
-        <Typography variant="body1">1️⃣ <strong>Describe Your Video</strong> – Enter a prompt, script, or idea.</Typography>
-        <Typography variant="body1">2️⃣ <strong>Choose a Style</strong> – Select themes, voices, and animations.</Typography>
-        <Typography variant="body1">3️⃣ <strong>Generate & Download</strong> – AI processes your request and delivers a professional-quality video.</Typography>
+        <div className="step">
+          <span className="step-icon">🎥</span>
+          <Typography variant="body1"><strong>Describe Your Video</strong> – Enter a prompt, script, or idea.</Typography>
+        </div>
+        <div className="step">
+          <span className="step-icon">🎨</span>
+          <Typography variant="body1"><strong>Choose a Style</strong> – Select themes, voices, and animations.</Typography>
+        </div>
+        <div className="step">
+          <span className="step-icon">💾</span>
+          <Typography variant="body1"><strong>Generate & Download</strong> – AI processes your request and delivers a professional-quality video.</Typography>
+        </div>
       </Box>
-      <Typography variant="body1" mt={2}>👉 No complex editing. Just pure creativity.</Typography>
+      <Typography variant="body1" mt={2} style={{ textAlign: 'center' }}>👉 No complex editing. Just pure creativity.</Typography>
     </section>
   );
 };
