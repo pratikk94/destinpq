@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './styles/home.module.css';
 import { Typography, Button, Box } from '@mui/material';
+import Loader from './Loader';
 
 const HomeSection: React.FC = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a network request or component loading
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the timeout as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <section id="home" className={styles['how-it-works']}>
       <Box>
