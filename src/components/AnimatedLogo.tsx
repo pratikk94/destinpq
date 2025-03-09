@@ -37,6 +37,7 @@ export default function AnimatedLogo() {
             alt="DestinPQ Logo"
             width={300}
             height={300}
+            
             className="invert-color" // Apply the invert class
           />
         </motion.div>
