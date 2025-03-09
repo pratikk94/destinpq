@@ -31,6 +31,6 @@
 
 @media (orientation: portrait) {
   .animatedLogo {
-    width: 15vw; /* Adjust for portrait mode */
+    width: 25vw; /* Adjust for portrait mode */
   }
 }
