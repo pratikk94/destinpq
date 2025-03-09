@@ -1,10 +1,12 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
 import styles from './styles/home.module.css';
+import AnimatedLogo from './AnimatedLogo';
 
 const HomeSection: React.FC = () => {
   return (
     <section id="home" className={styles['how-it-works']}>
+      <AnimatedLogo />
       <Typography variant="h4" gutterBottom>AI-Powered Your Video</Typography>
       <Box>
         <div className={styles.step}>

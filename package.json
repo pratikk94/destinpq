@@ -15,11 +15,13 @@
     "@mui/material": "^6.4.7",
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",
+    "@svgr/webpack": "^8.1.0",
     "framer-motion": "^12.4.10",
     "gsap": "^3.12.7",
     "next": "15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-shimmer-effects": "^1.0.3",
     "three": "^0.174.0"
   },
   "devDependencies": {
