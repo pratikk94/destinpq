@@ -1,0 +1,48 @@
+/* src/components/styles/video.module.css */
+
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Solid color for testing */
+    pointer-events: none;
+    z-index: 5;
+  }
+
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10; /* Ensure content is above the gradient */
+}
+
+.heroGradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 80%);
+  pointer-events: none;
+  z-index: 5; /* Ensure it is above the background but below the content */
+}
